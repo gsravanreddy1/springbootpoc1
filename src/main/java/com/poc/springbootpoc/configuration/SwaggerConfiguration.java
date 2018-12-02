@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.poc.springbootpoc.controller"))
-                .paths(regex("/"))
+              //  .paths(regex("*"))
                 .build()
                 .apiInfo(metaData());
     }
